@@ -1,0 +1,14 @@
+{
+  "config": {},
+  "scenario": {
+    "name": "custom shock",
+    "events": [
+      {
+        "start_month": 8,
+        "end_month": 11,
+        "mortality_multiplier": 3
+      }
+    ]
+  },
+  "persist": true
+}

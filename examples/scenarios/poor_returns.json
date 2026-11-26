@@ -1,0 +1,11 @@
+{
+  "name": "poor_returns",
+  "events": [
+    {
+      "name": "poor return period",
+      "start_month": 8,
+      "end_month": 11,
+      "asset_return_monthly": -0.02
+    }
+  ]
+}

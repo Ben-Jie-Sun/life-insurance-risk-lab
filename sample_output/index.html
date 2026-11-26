@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Insurance Lab — professor demonstration</title><style>
+:root{font-family:system-ui,sans-serif;color:#1c2d3b;background:#f0f4f5}
+body{max-width:1200px;margin:40px auto;padding:0 24px;line-height:1.55}
+h1{font-size:2rem;line-height:1.2} h2{font-size:1.3rem;margin-top:32px}
+.eyebrow{color:#426671;font-weight:650;letter-spacing:.06em;font-size:.8rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.card{background:white;padding:18px;border:1px solid #d5dfe2;border-radius:10px}
+.value{display:block;font-size:1.35rem;font-weight:700;margin-top:8px}
+.note{border-left:4px solid #19857b;background:#e0efec;padding:12px 18px}
+.warning{border-left:4px solid #b06523;background:#fff0dc;padding:12px 18px}
+.scroll{overflow:auto;background:white;border:1px solid #d5dfe2;border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.85rem;white-space:nowrap}
+th,td{padding:10px 12px;border-bottom:1px solid #e4eaec;text-align:right}
+th{background:#173f4c;color:white}td:first-child,th:first-child{text-align:left}
+tbody tr:hover{background:#eff7f5}.bad{background:#fff0dc}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;padding:16px;border-radius:8px}
+a{color:#146f77}footer{color:#5a6c74;font-size:.85rem;margin:32px 0}
+</style></head><body><div class="eyebrow">YULE–FURRY / ACTUARIAL PRICING / LOCAL BACKEND</div><h1>Professor demonstration</h1><p>Start with the quote, inspect a monthly trace, apply an experience shock, then compare capital levels and analytical expectations.</p><p class="note">All examples use synthetic assumptions and virtual money. Fixed contract promises and the original reserve valuation basis remain unchanged by experience shocks.</p><ol><li><a href="premium_quote/quote.json">Premium to benefit</a></li><li><a href="cover_quote/quote.json">Benefit to premium</a></li><li><a href="baseline/report.html">Baseline</a></li><li><a href="mortality_shock/report.html">Mortality Shock</a></li><li><a href="lapse_shock/report.html">Lapse Shock</a></li><li><a href="poor_returns/report.html">Poor Returns</a></li><li><a href="combined_stress/report.html">Combined Stress</a></li><li><a href="volatile_returns/report.html">Volatile Returns</a></li><li><a href="increasing_mortality/report.html">Increasing policy-duration mortality</a></li><li><a href="shortfall/report.html">Guaranteed shortfall boundary</a></li><li><a href="capital_comparison/experiment.html">Capital and scenario experiment</a></li><li><a href="benchmark/benchmark.html">Theory versus simulation</a></li></ol><p>Each simulation includes its CSV ledger, exact JSON results, and an explained month.</p>
+<footer>Life Insurance Lab v0.2 · synthetic assumptions · virtual money · Python standard library</footer>
+</body></html>

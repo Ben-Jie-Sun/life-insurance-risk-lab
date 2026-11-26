@@ -1,0 +1,12 @@
+{
+  "name": "combined_stress",
+  "events": [
+    {
+      "name": "mortality and return stress",
+      "start_month": 8,
+      "end_month": 11,
+      "mortality_multiplier": 3,
+      "asset_return_monthly": -0.02
+    }
+  ]
+}

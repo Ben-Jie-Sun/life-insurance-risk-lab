@@ -1,0 +1,1525 @@
+{
+  "schema_version": 2,
+  "status": "completed",
+  "experiment": "analytical_benchmark",
+  "config": {
+    "policy": {
+      "name": "Synthetic term-life example",
+      "term_months": 36,
+      "premium_paise": 100000,
+      "monthly_expense_paise": 8000,
+      "acquisition_expense_paise": 50000,
+      "mortality": [
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001,
+        0.001
+      ],
+      "lapse": [
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005,
+        0.005
+      ],
+      "valuation_rate_monthly": 0.003,
+      "target_margin_paise": 50000,
+      "sum_assured_paise": null,
+      "pricing_mode": "auto"
+    },
+    "simulation": {
+      "initial_policies": 100,
+      "acquisition_months": 12,
+      "yule_rate_monthly": 0.03,
+      "starting_capital_paise": 500000000,
+      "asset_rate_monthly": 0.003,
+      "capital_buffer_paise": 50000000,
+      "max_policies": 10000,
+      "seed": 2026
+    }
+  },
+  "paths": 200,
+  "seed_start": 2026,
+  "yule": [
+    {
+      "month": 0,
+      "expected": 100.0,
+      "sample_mean": 100.0,
+      "error": 0.0,
+      "standard_error": 0.0,
+      "sample_mean_normal_95": [
+        100.0,
+        100.0
+      ],
+      "theoretical_variance": 0.0,
+      "theoretical_mean_standard_error": 0.0
+    },
+    {
+      "month": 1,
+      "expected": 103.0454533953517,
+      "sample_mean": 103.02500000000002,
+      "error": -0.020453395351680115,
+      "standard_error": 0.12689518089617652,
+      "sample_mean_normal_95": [
+        102.77628544544352,
+        103.27371455455652
+      ],
+      "theoretical_variance": 3.138201259184277,
+      "theoretical_mean_standard_error": 0.12526374693390496
+    },
+    {
+      "month": 2,
+      "expected": 106.18365465453596,
+      "sample_mean": 106.22500000000007,
+      "error": 0.04134534546410862,
+      "standard_error": 0.19171763942405445,
+      "sample_mean_normal_95": [
+        105.84923342672892,
+        106.60076657327122
+      ],
+      "theoretical_variance": 6.566030503401604,
+      "theoretical_mean_standard_error": 0.18119092835185768
+    },
+    {
+      "month": 3,
+      "expected": 109.41742837052104,
+      "sample_mean": 109.59999999999997,
+      "error": 0.1825716294789288,
+      "standard_error": 0.23553638133985416,
+      "sample_mean_normal_95": [
+        109.13834869257386,
+        110.06165130742608
+      ],
+      "theoretical_variance": 10.304307941659982,
+      "theoretical_mean_standard_error": 0.2269835670446209
+    },
+    {
+      "month": 4,
+      "expected": 112.74968515793758,
+      "sample_mean": 112.945,
+      "error": 0.195314842062416,
+      "standard_error": 0.29074479821390126,
+      "sample_mean_normal_95": [
+        112.37514019550075,
+        113.51485980449924
+      ],
+      "theoretical_variance": 14.375229874202905,
+      "theoretical_mean_standard_error": 0.2680972759485156
+    },
+    {
+      "month": 5,
+      "expected": 116.1834242728283,
+      "sample_mean": 116.375,
+      "error": 0.19157572717169558,
+      "standard_error": 0.33538678638612474,
+      "sample_mean_normal_95": [
+        115.7176418986832,
+        117.0323581013168
+      ],
+      "theoretical_variance": 18.802456484771998,
+      "theoretical_mean_standard_error": 0.3066142241055688
+    },
+    {
+      "month": 6,
+      "expected": 119.72173631218101,
+      "sample_mean": 119.97999999999995,
+      "error": 0.25826368781893905,
+      "standard_error": 0.35676942429327174,
+      "sample_mean_normal_95": [
+        119.28073192838514,
+        120.67926807161476
+      ],
+      "theoretical_variance": 23.611205143853006,
+      "theoretical_mean_standard_error": 0.34359281965615207
+    },
+    {
+      "month": 7,
+      "expected": 123.36780599567432,
+      "sample_mean": 123.59500000000006,
+      "error": 0.22719400432573877,
+      "standard_error": 0.3968530416708647,
+      "sample_mean_normal_95": [
+        122.81716803832516,
+        124.37283196167495
+      ],
+      "theoretical_variance": 28.82834956618905,
+      "theoretical_mean_standard_error": 0.3796600424471151
+    },
+    {
+      "month": 8,
+      "expected": 127.12491503214048,
+      "sample_mean": 127.375,
+      "error": 0.2500849678595216,
+      "standard_error": 0.44746283638951356,
+      "sample_mean_normal_95": [
+        126.49797284067655,
+        128.25202715932343
+      ],
+      "theoretical_variance": 34.482525187148866,
+      "theoretical_mean_standard_error": 0.4152259938102916
+    },
+    {
+      "month": 9,
+      "expected": 130.99644507332474,
+      "sample_mean": 131.37000000000003,
+      "error": 0.3735549266752969,
+      "standard_error": 0.4733240733281587,
+      "sample_mean_normal_95": [
+        130.44228481627684,
+        132.29771518372323
+      ],
+      "theoretical_variance": 40.60424114516112,
+      "theoretical_mean_standard_error": 0.45057874531074543
+    },
+    {
+      "month": 10,
+      "expected": 134.9858807576003,
+      "sample_mean": 135.25999999999993,
+      "error": 0.27411924239962104,
+      "standard_error": 0.5027682163750857,
+      "sample_mean_normal_95": [
+        134.27457429590476,
+        136.2454257040951
+      ],
+      "theoretical_variance": 47.225999281450584,
+      "theoretical_mean_standard_error": 0.4859320903246182
+    },
+    {
+      "month": 11,
+      "expected": 139.09681284637801,
+      "sample_mean": 139.41499999999996,
+      "error": 0.31818715362194894,
+      "standard_error": 0.5355351195968459,
+      "sample_mean_normal_95": [
+        138.36535116559014,
+        140.4646488344098
+      ],
+      "theoretical_variance": 54.38242059382511,
+      "theoretical_mean_standard_error": 0.5214519181757082
+    },
+    {
+      "month": 12,
+      "expected": 143.332941456034,
+      "sample_mean": 143.59000000000003,
+      "error": 0.2570585439660249,
+      "standard_error": 0.5605628004660417,
+      "sample_mean_normal_95": [
+        142.49129691108658,
+        144.68870308891348
+      ],
+      "theoretical_variance": 62.11037960835474,
+      "theoretical_mean_standard_error": 0.5572718349618736
+    }
+  ],
+  "fixed_cohort": [
+    {
+      "month": 0,
+      "active_probability": 1.0,
+      "active": {
+        "expected": 100.0,
+        "sample_mean": 100.0,
+        "error": 0.0,
+        "standard_error": 0.0,
+        "sample_mean_normal_95": [
+          100.0,
+          100.0
+        ]
+      },
+      "premiums_paise": {
+        "expected": 10000000.0,
+        "sample_mean": 10000000.0,
+        "error": 0.0,
+        "standard_error": 0.0,
+        "sample_mean_normal_95": [
+          10000000.0,
+          10000000.0
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8902838.3,
+        "sample_mean": 9347980.215000004,
+        "error": 445141.91500000283,
+        "standard_error": 2310009.8413299453,
+        "sample_mean_normal_95": [
+          4820360.925993311,
+          13875599.504006695
+        ]
+      }
+    },
+    {
+      "month": 1,
+      "active_probability": 0.994005,
+      "active": {
+        "expected": 99.40050000000001,
+        "sample_mean": 99.36999999999998,
+        "error": -0.030500000000031946,
+        "standard_error": 0.05640396293857273,
+        "sample_mean_normal_95": [
+          99.25944823264038,
+          99.48055176735957
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9940050.0,
+        "sample_mean": 9936999.999999998,
+        "error": -3050.0000000018626,
+        "standard_error": 5640.3962938572595,
+        "sample_mean_normal_95": [
+          9925944.823264038,
+          9948055.176735958
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8849465.784391502,
+        "sample_mean": 9347980.215,
+        "error": 498514.43060849793,
+        "standard_error": 1934675.4220619819,
+        "sample_mean_normal_95": [
+          5556016.387758516,
+          13139944.042241484
+        ]
+      }
+    },
+    {
+      "month": 2,
+      "active_probability": 0.988045940025,
+      "active": {
+        "expected": 98.8045940025,
+        "sample_mean": 98.64500000000001,
+        "error": -0.15959400249998623,
+        "standard_error": 0.08263788538256842,
+        "sample_mean_normal_95": [
+          98.48302974465018,
+          98.80697025534984
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9880459.400249999,
+        "sample_mean": 9864500.0,
+        "error": -15959.400249999017,
+        "standard_error": 8263.788538256842,
+        "sample_mean_normal_95": [
+          9848302.974465016,
+          9880697.025534984
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8796413.237014072,
+        "sample_mean": 6231986.8100000005,
+        "error": -2564426.4270140715,
+        "standard_error": 1610246.7880577568,
+        "sample_mean_normal_95": [
+          3075903.105406797,
+          9388070.514593204
+        ]
+      }
+    },
+    {
+      "month": 3,
+      "active_probability": 0.9821226046145501,
+      "active": {
+        "expected": 98.21226046145502,
+        "sample_mean": 98.07999999999998,
+        "error": -0.1322604614550329,
+        "standard_error": 0.09703131132209035,
+        "sample_mean_normal_95": [
+          97.88981862980869,
+          98.27018137019128
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9821226.046145502,
+        "sample_mean": 9807999.999999998,
+        "error": -13226.04614550434,
+        "standard_error": 9703.131132209024,
+        "sample_mean_normal_95": [
+          9788981.862980869,
+          9827018.137019128
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8743678.739658175,
+        "sample_mean": 6677128.725000001,
+        "error": -2066550.0146581745,
+        "standard_error": 1886730.9542499697,
+        "sample_mean_normal_95": [
+          2979136.05467006,
+          10375121.395329941
+        ]
+      }
+    },
+    {
+      "month": 4,
+      "active_probability": 0.9762347795998859,
+      "active": {
+        "expected": 97.62347795998859,
+        "sample_mean": 97.43999999999994,
+        "error": -0.18347795998865024,
+        "standard_error": 0.10950780702303822,
+        "sample_mean_normal_95": [
+          97.22536469823478,
+          97.6546353017651
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9762347.795998858,
+        "sample_mean": 9744000.000000004,
+        "error": -18347.795998854563,
+        "standard_error": 10950.780702303835,
+        "sample_mean_normal_95": [
+          9722536.469823489,
+          9765463.530176518
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8691260.385613922,
+        "sample_mean": 10683405.959999999,
+        "error": 1992145.574386077,
+        "standard_error": 2236643.499061695,
+        "sample_mean_normal_95": [
+          6299584.701839077,
+          15067227.21816092
+        ]
+      }
+    },
+    {
+      "month": 5,
+      "active_probability": 0.9703822520961847,
+      "active": {
+        "expected": 97.03822520961847,
+        "sample_mean": 96.83500000000002,
+        "error": -0.20322520961845214,
+        "standard_error": 0.12087983567728272,
+        "sample_mean_normal_95": [
+          96.59807552207255,
+          97.0719244779275
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9703822.520961847,
+        "sample_mean": 9683500.0,
+        "error": -20322.520961847156,
+        "standard_error": 12087.983567728268,
+        "sample_mean_normal_95": [
+          9659807.552207252,
+          9707192.447792748
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8639156.27960217,
+        "sample_mean": 13354257.450000003,
+        "error": 4715101.170397833,
+        "standard_error": 2423806.5648417436,
+        "sample_mean_normal_95": [
+          8603596.582910186,
+          18104918.31708982
+        ]
+      }
+    },
+    {
+      "month": 6,
+      "active_probability": 0.9645648104948681,
+      "active": {
+        "expected": 96.45648104948681,
+        "sample_mean": 96.15499999999997,
+        "error": -0.3014810494868385,
+        "standard_error": 0.137657630066691,
+        "sample_mean_normal_95": [
+          95.88519104506926,
+          96.42480895493068
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9645648.10494868,
+        "sample_mean": 9615500.000000002,
+        "error": -30148.104948678985,
+        "standard_error": 13765.763006669087,
+        "sample_mean_normal_95": [
+          9588519.10450693,
+          9642480.895493073
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8587364.537705954,
+        "sample_mean": 4451419.150000002,
+        "error": -4135945.387705952,
+        "standard_error": 1513337.7638753783,
+        "sample_mean_normal_95": [
+          1485277.132804261,
+          7417561.167195743
+        ]
+      }
+    },
+    {
+      "month": 7,
+      "active_probability": 0.9587822444559514,
+      "active": {
+        "expected": 95.87822444559514,
+        "sample_mean": 95.63000000000002,
+        "error": -0.24822444559511325,
+        "standard_error": 0.1412987141950196,
+        "sample_mean_normal_95": [
+          95.35305452017778,
+          95.90694547982227
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9587822.444559515,
+        "sample_mean": 9563000.000000004,
+        "error": -24822.444559510797,
+        "standard_error": 14129.871419501937,
+        "sample_mean_normal_95": [
+          9535305.45201778,
+          9590694.547982227
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8535883.287302407,
+        "sample_mean": 12909115.535000006,
+        "error": 4373232.247697599,
+        "standard_error": 2310009.8413299453,
+        "sample_mean_normal_95": [
+          8381496.245993313,
+          17436734.8240067
+        ]
+      }
+    },
+    {
+      "month": 8,
+      "active_probability": 0.953034344900438,
+      "active": {
+        "expected": 95.3034344900438,
+        "sample_mean": 94.97500000000002,
+        "error": -0.3284344900437759,
+        "standard_error": 0.1535897917200325,
+        "sample_mean_normal_95": [
+          94.67396400822877,
+          95.27603599177128
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9530343.44900438,
+        "sample_mean": 9497500.000000004,
+        "error": -32843.44900437631,
+        "standard_error": 15358.979172003232,
+        "sample_mean_normal_95": [
+          9467396.400822878,
+          9527603.59917713
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8484710.66699503,
+        "sample_mean": 4451419.150000001,
+        "error": -4033291.5169950286,
+        "standard_error": 1375462.4923979961,
+        "sample_mean_normal_95": [
+          1755512.664899929,
+          7147325.635100074
+        ]
+      }
+    },
+    {
+      "month": 9,
+      "active_probability": 0.9473209040027599,
+      "active": {
+        "expected": 94.732090400276,
+        "sample_mean": 94.43999999999998,
+        "error": -0.29209040027600963,
+        "standard_error": 0.157019987205163,
+        "sample_mean_normal_95": [
+          94.13224082507786,
+          94.74775917492211
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9473209.0400276,
+        "sample_mean": 9444000.000000002,
+        "error": -29209.04002759792,
+        "standard_error": 15701.998720516307,
+        "sample_mean_normal_95": [
+          9413224.08250779,
+          9474775.917492215
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8433844.826546395,
+        "sample_mean": 9347980.215000007,
+        "error": 914135.3884536121,
+        "standard_error": 2130623.6711080517,
+        "sample_mean_normal_95": [
+          5171957.819628226,
+          13524002.610371789
+        ]
+      }
+    },
+    {
+      "month": 10,
+      "active_probability": 0.9416417151832635,
+      "active": {
+        "expected": 94.16417151832634,
+        "sample_mean": 93.93999999999998,
+        "error": -0.22417151832635795,
+        "standard_error": 0.16390952278098864,
+        "sample_mean_normal_95": [
+          93.61873733534925,
+          94.26126266465072
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9416417.151832635,
+        "sample_mean": 9393999.99999999,
+        "error": -22417.151832643896,
+        "standard_error": 16390.952278098874,
+        "sample_mean_normal_95": [
+          9361873.733534917,
+          9426126.266465064
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8383283.926811249,
+        "sample_mean": 9793122.13,
+        "error": 1409838.2031887518,
+        "standard_error": 2073063.8075666039,
+        "sample_mean_normal_95": [
+          5729917.067169458,
+          13856327.192830544
+        ]
+      }
+    },
+    {
+      "month": 11,
+      "active_probability": 0.9359965731007398,
+      "active": {
+        "expected": 93.59965731007398,
+        "sample_mean": 93.20000000000003,
+        "error": -0.3996573100739482,
+        "standard_error": 0.17421756166922392,
+        "sample_mean_normal_95": [
+          92.85853357912835,
+          93.54146642087171
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9359965.731007397,
+        "sample_mean": 9320000.0,
+        "error": -39965.731007397175,
+        "standard_error": 17421.75616692238,
+        "sample_mean_normal_95": [
+          9285853.357912833,
+          9354146.642087167
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8333026.139670016,
+        "sample_mean": 5786844.8950000005,
+        "error": -2546181.2446700158,
+        "standard_error": 1555838.2022990054,
+        "sample_mean_normal_95": [
+          2737402.01849395,
+          8836287.77150605
+        ]
+      }
+    },
+    {
+      "month": 12,
+      "active_probability": 0.9303852736450009,
+      "active": {
+        "expected": 93.03852736450008,
+        "sample_mean": 92.69000000000001,
+        "error": -0.3485273645000717,
+        "standard_error": 0.18733652840375742,
+        "sample_mean_normal_95": [
+          92.32282040432865,
+          93.05717959567137
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9303852.736450009,
+        "sample_mean": 9268999.999999998,
+        "error": -34852.73645001091,
+        "standard_error": 18733.65284037576,
+        "sample_mean_normal_95": [
+          9232282.040432861,
+          9305717.959567135
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8283069.647962694,
+        "sample_mean": 6231986.809999999,
+        "error": -2051082.8379626954,
+        "standard_error": 1729505.3738071888,
+        "sample_mean_normal_95": [
+          2842156.2773379087,
+          9621817.342662089
+        ]
+      }
+    },
+    {
+      "month": 13,
+      "active_probability": 0.9248076139294992,
+      "active": {
+        "expected": 92.48076139294992,
+        "sample_mean": 92.16999999999999,
+        "error": -0.310761392949928,
+        "standard_error": 0.19479534422222025,
+        "sample_mean_normal_95": [
+          91.78820112532443,
+          92.55179887467554
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9248076.139294991,
+        "sample_mean": 9217000.0,
+        "error": -31076.13929499127,
+        "standard_error": 19479.534422222016,
+        "sample_mean_normal_95": [
+          9178820.112532444,
+          9255179.887467556
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8233412.645423159,
+        "sample_mean": 8457696.385000004,
+        "error": 224283.7395768445,
+        "standard_error": 1850495.526357362,
+        "sample_mean_normal_95": [
+          4830725.153339574,
+          12084667.616660433
+        ]
+      }
+    },
+    {
+      "month": 14,
+      "active_probability": 0.9192633922839919,
+      "active": {
+        "expected": 91.92633922839919,
+        "sample_mean": 91.59500000000003,
+        "error": -0.33133922839915897,
+        "standard_error": 0.20201217685572811,
+        "sample_mean_normal_95": [
+          91.1990561333628,
+          91.99094386663725
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9192633.92283992,
+        "sample_mean": 9159499.999999998,
+        "error": -33133.92283992097,
+        "standard_error": 20201.217685572803,
+        "sample_mean_normal_95": [
+          9119905.613336276,
+          9199094.38666372
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8184053.336613847,
+        "sample_mean": 6677128.724999996,
+        "error": -1506924.611613851,
+        "standard_error": 1778049.373371667,
+        "sample_mean_normal_95": [
+          3192151.9531915286,
+          10162105.496808464
+        ]
+      }
+    },
+    {
+      "month": 15,
+      "active_probability": 0.9137524082472493,
+      "active": {
+        "expected": 91.37524082472494,
+        "sample_mean": 91.10500000000002,
+        "error": -0.2702408247249224,
+        "standard_error": 0.2016760799054518,
+        "sample_mean_normal_95": [
+          90.70971488338533,
+          91.5002851166147
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9137524.082472494,
+        "sample_mean": 9110499.999999998,
+        "error": -27024.082472495735,
+        "standard_error": 20167.60799054518,
+        "sample_mean_normal_95": [
+          9070971.48833853,
+          9150028.511661466
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8134989.936860847,
+        "sample_mean": 8012554.470000001,
+        "error": -122435.46686084662,
+        "standard_error": 2014600.9725243303,
+        "sample_mean_normal_95": [
+          4063936.5638523134,
+          11961172.376147687
+        ]
+      }
+    },
+    {
+      "month": 16,
+      "active_probability": 0.9082744625598071,
+      "active": {
+        "expected": 90.82744625598072,
+        "sample_mean": 90.605,
+        "error": -0.22244625598071366,
+        "standard_error": 0.20895739028513421,
+        "sample_mean_normal_95": [
+          90.19544351504113,
+          91.01455648495887
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9082744.625598071,
+        "sample_mean": 9060500.000000006,
+        "error": -22244.625598065555,
+        "standard_error": 20895.739028513402,
+        "sample_mean_normal_95": [
+          9019544.35150412,
+          9101455.648495892
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8086220.672189367,
+        "sample_mean": 7122270.64,
+        "error": -963950.0321893673,
+        "standard_error": 1824757.2001964874,
+        "sample_mean_normal_95": [
+          3545746.5276148845,
+          10698794.752385115
+        ]
+      }
+    },
+    {
+      "month": 17,
+      "active_probability": 0.9028293571567612,
+      "active": {
+        "expected": 90.28293571567612,
+        "sample_mean": 90.05500000000004,
+        "error": -0.2279357156760824,
+        "standard_error": 0.210311745156455,
+        "sample_mean_normal_95": [
+          89.64278897949339,
+          90.46721102050668
+        ]
+      },
+      "premiums_paise": {
+        "expected": 9028293.571567612,
+        "sample_mean": 9005500.000000002,
+        "error": -22793.571567609906,
+        "standard_error": 21031.17451564551,
+        "sample_mean_normal_95": [
+          8964278.897949336,
+          9046721.102050668
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 8037743.779259593,
+        "sample_mean": 6677128.725000005,
+        "error": -1360615.054259588,
+        "standard_error": 1662277.1894511925,
+        "sample_mean_normal_95": [
+          3419065.4336756677,
+          9935192.016324343
+        ]
+      }
+    },
+    {
+      "month": 18,
+      "active_probability": 0.8974168951606064,
+      "active": {
+        "expected": 89.74168951606065,
+        "sample_mean": 89.49000000000001,
+        "error": -0.2516895160606367,
+        "standard_error": 0.21664295708439574,
+        "sample_mean_normal_95": [
+          89.0653798041146,
+          89.91462019588542
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8974168.951606065,
+        "sample_mean": 8949000.000000004,
+        "error": -25168.95160606131,
+        "standard_error": 21664.295708439575,
+        "sample_mean_normal_95": [
+          8906537.980411462,
+          8991462.019588545
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7989557.505302932,
+        "sample_mean": 6231986.8100000005,
+        "error": -1757570.6953029316,
+        "standard_error": 1610246.788057757,
+        "sample_mean_normal_95": [
+          3075903.1054067966,
+          9388070.514593204
+        ]
+      }
+    },
+    {
+      "month": 19,
+      "active_probability": 0.8920368808741186,
+      "active": {
+        "expected": 89.20368808741186,
+        "sample_mean": 88.9249999999999,
+        "error": -0.2786880874119646,
+        "standard_error": 0.22100018190492565,
+        "sample_mean_normal_95": [
+          88.49183964346625,
+          89.35816035653355
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8920368.808741186,
+        "sample_mean": 8892500.000000006,
+        "error": -27868.808741180226,
+        "standard_error": 22100.01819049252,
+        "sample_mean_normal_95": [
+          8849183.96434664,
+          8935816.035653371
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7941660.108058641,
+        "sample_mean": 13799399.365,
+        "error": 5857739.2569413595,
+        "standard_error": 2284000.269520105,
+        "sample_mean_normal_95": [
+          9322758.836740594,
+          18276039.893259406
+        ]
+      }
+    },
+    {
+      "month": 20,
+      "active_probability": 0.8866891197732782,
+      "active": {
+        "expected": 88.66891197732782,
+        "sample_mean": 88.33500000000004,
+        "error": -0.3339119773277872,
+        "standard_error": 0.22797750704530695,
+        "sample_mean_normal_95": [
+          87.88816408619124,
+          88.78183591380883
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8866891.197732782,
+        "sample_mean": 8833500.000000002,
+        "error": -33391.19773278013,
+        "standard_error": 22797.75070453071,
+        "sample_mean_normal_95": [
+          8788816.408619123,
+          8878183.591380881
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7894049.855710829,
+        "sample_mean": 6677128.724999999,
+        "error": -1216921.13071083,
+        "standard_error": 1778049.373371668,
+        "sample_mean_normal_95": [
+          3192151.9531915295,
+          10162105.496808467
+        ]
+      }
+    },
+    {
+      "month": 21,
+      "active_probability": 0.8813734185002374,
+      "active": {
+        "expected": 88.13734185002374,
+        "sample_mean": 87.85999999999999,
+        "error": -0.27734185002375966,
+        "standard_error": 0.23702935382113405,
+        "sample_mean_normal_95": [
+          87.39542246651057,
+          88.3245775334894
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8813734.185002375,
+        "sample_mean": 8786000.000000004,
+        "error": -27734.18500237167,
+        "standard_error": 23702.93538211339,
+        "sample_mean_normal_95": [
+          8739542.24665106,
+          8832457.753348947
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7846725.026825842,
+        "sample_mean": 5786844.8950000005,
+        "error": -2059880.131825842,
+        "standard_error": 1793661.2698300215,
+        "sample_mean_normal_95": [
+          2271268.8061331585,
+          9302420.983866842
+        ]
+      }
+    },
+    {
+      "month": 22,
+      "active_probability": 0.8760895848563285,
+      "active": {
+        "expected": 87.60895848563285,
+        "sample_mean": 87.38499999999998,
+        "error": -0.22395848563287757,
+        "standard_error": 0.23518168962671915,
+        "sample_mean_normal_95": [
+          86.92404388833161,
+          87.84595611166834
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8760895.848563286,
+        "sample_mean": 8738499.999999998,
+        "error": -22395.848563287407,
+        "standard_error": 23518.1689626719,
+        "sample_mean_normal_95": [
+          8692404.388833161,
+          8784595.611166835
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7799683.910290021,
+        "sample_mean": 8902838.300000003,
+        "error": 1103154.3897099812,
+        "standard_error": 1995730.7423037374,
+        "sample_mean_normal_95": [
+          4991206.045084678,
+          12814470.554915328
+        ]
+      }
+    },
+    {
+      "month": 23,
+      "active_probability": 0.8708374277951149,
+      "active": {
+        "expected": 87.08374277951148,
+        "sample_mean": 86.78,
+        "error": -0.3037427795114809,
+        "standard_error": 0.24020092092258985,
+        "sample_mean_normal_95": [
+          86.30920619499173,
+          87.25079380500827
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8708374.277951147,
+        "sample_mean": 8678000.000000002,
+        "error": -30374.277951145545,
+        "standard_error": 24020.092092258976,
+        "sample_mean_normal_95": [
+          8630920.619499175,
+          8725079.380500829
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7752924.805247833,
+        "sample_mean": 9793122.13,
+        "error": 2040197.3247521678,
+        "standard_error": 1974664.3843106413,
+        "sample_mean_normal_95": [
+          5922779.936751144,
+          13663464.323248858
+        ]
+      }
+    },
+    {
+      "month": 24,
+      "active_probability": 0.8656167574154832,
+      "active": {
+        "expected": 86.56167574154831,
+        "sample_mean": 86.24000000000001,
+        "error": -0.3216757415483045,
+        "standard_error": 0.24020928898059477,
+        "sample_mean_normal_95": [
+          85.76918979359804,
+          86.71081020640197
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8656167.574154831,
+        "sample_mean": 8624000.0,
+        "error": -32167.57415483147,
+        "standard_error": 24020.928898059472,
+        "sample_mean_normal_95": [
+          8576918.979359804,
+          8671081.020640196
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7706446.021040373,
+        "sample_mean": 7122270.639999998,
+        "error": -584175.3810403747,
+        "standard_error": 1712146.2320991461,
+        "sample_mean_normal_95": [
+          3766464.0250856713,
+          10478077.254914325
+        ]
+      }
+    },
+    {
+      "month": 25,
+      "active_probability": 0.8604273849547773,
+      "active": {
+        "expected": 86.04273849547774,
+        "sample_mean": 85.74000000000001,
+        "error": -0.30273849547772613,
+        "standard_error": 0.23641374174618557,
+        "sample_mean_normal_95": [
+          85.27662906617749,
+          86.20337093382253
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8604273.849547774,
+        "sample_mean": 8574000.000000006,
+        "error": -30273.84954776801,
+        "standard_error": 23641.374174618555,
+        "sample_mean_normal_95": [
+          8527662.906617753,
+          8620337.093382258
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7660245.877144235,
+        "sample_mean": 4896561.065000002,
+        "error": -2763684.812144233,
+        "standard_error": 1438795.915515711,
+        "sample_mean_normal_95": [
+          2076521.0705892085,
+          7716601.059410796
+        ]
+      }
+    },
+    {
+      "month": 26,
+      "active_probability": 0.8552691227819734,
+      "active": {
+        "expected": 85.52691227819734,
+        "sample_mean": 85.335,
+        "error": -0.1919122781973499,
+        "standard_error": 0.244052624278219,
+        "sample_mean_normal_95": [
+          84.85665685641469,
+          85.8133431435853
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8552691.227819735,
+        "sample_mean": 8533499.999999994,
+        "error": -19191.227819740772,
+        "standard_error": 24405.26242782192,
+        "sample_mean_normal_95": [
+          8485665.685641464,
+          8581334.314358525
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7614322.703110756,
+        "sample_mean": 6231986.81,
+        "error": -1382335.8931107568,
+        "standard_error": 1610246.7880577568,
+        "sample_mean_normal_95": [
+          3075903.105406796,
+          9388070.514593203
+        ]
+      }
+    },
+    {
+      "month": 27,
+      "active_probability": 0.8501417843908955,
+      "active": {
+        "expected": 85.01417843908955,
+        "sample_mean": 84.80500000000002,
+        "error": -0.20917843908952705,
+        "standard_error": 0.251297887258734,
+        "sample_mean_normal_95": [
+          84.3124561409729,
+          85.29754385902714
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8501417.843908954,
+        "sample_mean": 8480499.999999996,
+        "error": -20917.843908958137,
+        "standard_error": 25129.78872587343,
+        "sample_mean_normal_95": [
+          8431245.614097284,
+          8529754.385902708
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7568674.838505607,
+        "sample_mean": 7567412.555000002,
+        "error": -1262.2835056055337,
+        "standard_error": 1869766.4652551084,
+        "sample_mean_normal_95": [
+          3902670.283099989,
+          11232154.826900015
+        ]
+      }
+    },
+    {
+      "month": 28,
+      "active_probability": 0.8450451843934721,
+      "active": {
+        "expected": 84.50451843934721,
+        "sample_mean": 84.30000000000001,
+        "error": -0.20451843934719705,
+        "standard_error": 0.2548031065657909,
+        "sample_mean_normal_95": [
+          83.80058591113107,
+          84.79941408886896
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8450451.84393472,
+        "sample_mean": 8430000.000000004,
+        "error": -20451.843934716657,
+        "standard_error": 25480.31065657912,
+        "sample_mean_normal_95": [
+          8380058.591113108,
+          8479941.408886898
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7523300.632848766,
+        "sample_mean": 9347980.215000002,
+        "error": 1824679.582151236,
+        "standard_error": 2035009.363199179,
+        "sample_mean_normal_95": [
+          5359361.86312961,
+          13336598.566870393
+        ]
+      }
+    },
+    {
+      "month": 29,
+      "active_probability": 0.8399791385130333,
+      "active": {
+        "expected": 83.99791385130332,
+        "sample_mean": 83.80000000000001,
+        "error": -0.19791385130331207,
+        "standard_error": 0.2567676931414971,
+        "sample_mean_normal_95": [
+          83.29673532144268,
+          84.30326467855734
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8399791.385130333,
+        "sample_mean": 8379999.999999996,
+        "error": -19791.385130336508,
+        "standard_error": 25676.769314149726,
+        "sample_mean_normal_95": [
+          8329673.532144262,
+          8430326.46785573
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7478198.445554838,
+        "sample_mean": 7122270.639999999,
+        "error": -355927.80555483885,
+        "standard_error": 1712146.2320991452,
+        "sample_mean_normal_95": [
+          3766464.025085674,
+          10478077.254914323
+        ]
+      }
+    },
+    {
+      "month": 30,
+      "active_probability": 0.8349434635776477,
+      "active": {
+        "expected": 83.49434635776477,
+        "sample_mean": 83.34499999999998,
+        "error": -0.14934635776478444,
+        "standard_error": 0.255649483260689,
+        "sample_mean_normal_95": [
+          82.84392701280903,
+          83.84607298719094
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8349434.635776477,
+        "sample_mean": 8334500.000000006,
+        "error": -14934.635776471347,
+        "standard_error": 25564.94832606887,
+        "sample_mean_normal_95": [
+          8284392.7012809105,
+          8384607.298719101
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7433366.6458737375,
+        "sample_mean": 8012554.470000001,
+        "error": 579187.8241262631,
+        "standard_error": 1806108.7562327823,
+        "sample_mean_normal_95": [
+          4472581.307783747,
+          11552527.632216254
+        ]
+      }
+    },
+    {
+      "month": 31,
+      "active_probability": 0.8299379775134997,
+      "active": {
+        "expected": 82.99379775134997,
+        "sample_mean": 82.82499999999999,
+        "error": -0.16879775134998454,
+        "standard_error": 0.2652805000722687,
+        "sample_mean_normal_95": [
+          82.30505021985834,
+          83.34494978014163
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8299379.775134997,
+        "sample_mean": 8282500.000000002,
+        "error": -16879.77513499558,
+        "standard_error": 26528.05000722684,
+        "sample_mean_normal_95": [
+          8230505.021985837,
+          8334494.9780141665
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7388803.612831725,
+        "sample_mean": 7122270.640000001,
+        "error": -266532.9728317242,
+        "standard_error": 1930811.4768787103,
+        "sample_mean_normal_95": [
+          3337880.1453177286,
+          10906661.134682272
+        ]
+      }
+    },
+    {
+      "month": 32,
+      "active_probability": 0.8249624993383063,
+      "active": {
+        "expected": 82.49624993383064,
+        "sample_mean": 82.28500000000003,
+        "error": -0.21124993383061508,
+        "standard_error": 0.263564424818963,
+        "sample_mean_normal_95": [
+          81.76841372735485,
+          82.8015862726452
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8249624.993383064,
+        "sample_mean": 8228500.0,
+        "error": -21124.993383063935,
+        "standard_error": 26356.442481896305,
+        "sample_mean_normal_95": [
+          8176841.372735484,
+          8280158.627264516
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7344507.7351728,
+        "sample_mean": 5786844.895,
+        "error": -1557662.8401728002,
+        "standard_error": 1555838.202299005,
+        "sample_mean_normal_95": [
+          2737402.01849395,
+          8836287.771506049
+        ]
+      }
+    },
+    {
+      "month": 33,
+      "active_probability": 0.8200168491547732,
+      "active": {
+        "expected": 82.00168491547733,
+        "sample_mean": 81.84500000000003,
+        "error": -0.15668491547729957,
+        "standard_error": 0.2666653842096462,
+        "sample_mean_normal_95": [
+          81.32233584694912,
+          82.36766415305094
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8200168.491547733,
+        "sample_mean": 8184500.0,
+        "error": -15668.491547732614,
+        "standard_error": 26666.538420964658,
+        "sample_mean_normal_95": [
+          8132233.584694909,
+          8236766.415305091
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7300477.4113004375,
+        "sample_mean": 8457696.38500001,
+        "error": 1157218.9736995716,
+        "standard_error": 1955154.165953732,
+        "sample_mean_normal_95": [
+          4625594.219730694,
+          12289798.550269324
+        ]
+      }
+    },
+    {
+      "month": 34,
+      "active_probability": 0.8151008481440905,
+      "active": {
+        "expected": 81.51008481440904,
+        "sample_mean": 81.35500000000002,
+        "error": -0.15508481440902244,
+        "standard_error": 0.2702034874369972,
+        "sample_mean_normal_95": [
+          80.8254011646235,
+          81.88459883537654
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8151008.481440904,
+        "sample_mean": 8135500.000000002,
+        "error": -15508.481440901756,
+        "standard_error": 27020.348743699724,
+        "sample_mean_normal_95": [
+          8082540.116462351,
+          8188459.883537653
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7256711.049219691,
+        "sample_mean": 5786844.8950000005,
+        "error": -1469866.1542196907,
+        "standard_error": 1555838.2022990058,
+        "sample_mean_normal_95": [
+          2737402.018493949,
+          8836287.771506052
+        ]
+      }
+    },
+    {
+      "month": 35,
+      "active_probability": 0.8102143185594667,
+      "active": {
+        "expected": 81.02143185594667,
+        "sample_mean": 80.83000000000001,
+        "error": -0.1914318559466608,
+        "standard_error": 0.26807615358439285,
+        "sample_mean_normal_95": [
+          80.3045707389746,
+          81.35542926102542
+        ]
+      },
+      "premiums_paise": {
+        "expected": 8102143.185594668,
+        "sample_mean": 8083000.000000001,
+        "error": -19143.18559466675,
+        "standard_error": 26807.615358439292,
+        "sample_mean_normal_95": [
+          8030457.07389746,
+          8135542.926102542
+        ]
+      },
+      "claims_incurred_paise": {
+        "expected": 7213207.066479621,
+        "sample_mean": 8012554.469999999,
+        "error": 799347.4035203774,
+        "standard_error": 1913197.051774425,
+        "sample_mean_normal_95": [
+          4262688.248522126,
+          11762420.691477872
+        ]
+      }
+    }
+  ],
+  "cohort_margin_epv_paise": {
+    "expected": 5000001.949204039,
+    "sample_mean": 10753367.040692724,
+    "error": 5753365.091488685,
+    "standard_error": 11490310.234973006,
+    "sample_mean_normal_95": [
+      -11767641.019854367,
+      33274375.101239815
+    ]
+  },
+  "notes": [
+    "The Yule experiment uses the configured acquisition process.",
+    "The policy experiment uses only the initial cohort with no later admissions and baseline experience.",
+    "Incurred claims are compared; paid claims can be constrained by available cash.",
+    "Intervals are approximate pointwise normal intervals for sample means, not simultaneous bands.",
+    "No observed rare claims can give an uninformative zero empirical standard error; this is not proof of zero risk.",
+    "A random deviation is not automatically a correctness failure; inspect sampling uncertainty."
+  ],
+  "runtime": {
+    "application": "0.2.0",
+    "python": "3.12.14"
+  }
+}

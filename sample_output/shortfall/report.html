@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Life Insurance Lab — inspection report</title><style>
+:root{font-family:system-ui,sans-serif;color:#1c2d3b;background:#f0f4f5}
+body{max-width:1200px;margin:40px auto;padding:0 24px;line-height:1.55}
+h1{font-size:2rem;line-height:1.2} h2{font-size:1.3rem;margin-top:32px}
+.eyebrow{color:#426671;font-weight:650;letter-spacing:.06em;font-size:.8rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.card{background:white;padding:18px;border:1px solid #d5dfe2;border-radius:10px}
+.value{display:block;font-size:1.35rem;font-weight:700;margin-top:8px}
+.note{border-left:4px solid #19857b;background:#e0efec;padding:12px 18px}
+.warning{border-left:4px solid #b06523;background:#fff0dc;padding:12px 18px}
+.scroll{overflow:auto;background:white;border:1px solid #d5dfe2;border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.85rem;white-space:nowrap}
+th,td{padding:10px 12px;border-bottom:1px solid #e4eaec;text-align:right}
+th{background:#173f4c;color:white}td:first-child,th:first-child{text-align:left}
+tbody tr:hover{background:#eff7f5}.bad{background:#fff0dc}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;padding:16px;border-radius:8px}
+a{color:#146f77}footer{color:#5a6c74;font-size:.85rem;margin:32px 0}
+</style></head><body><div class="eyebrow">COURSE PROJECT / INSPECTION BUILD</div><h1>Boundary demonstration: certain death and insufficient cash</h1><p>Experience scenario: <strong>baseline</strong>. Premium, benefit and reserve valuation basis remain fixed.</p><p>One seeded projection from acquisition through the last contract expiry.</p><div class="cards"><div class="card">Monthly premium<span class="value">INR 1,000.00</span></div><div class="card">Fixed death benefit<span class="value">INR 100,000.00</span></div><div class="card">Policies issued<span class="value">1</span></div><div class="card">Final net assets<span class="value">INR -99,580.00</span></div><div class="card">Economic surplus<span class="value">INR -99,580.00</span></div><div class="card">Unpaid claims at end<span class="value">INR 99,580.00</span></div></div><p class="warning"><strong>Payment shortfall occurred</strong>. This is one synthetic path, not a guarantee or estimated failure probability.</p><p>Seed: 1 · Projected months: 12 · Deaths: 1 · Lapses: 0 · Expired: 0 · Active at end: 0</p><p>Capital-buffer breach observed: <strong>True</strong>. This is separate from an unpaid payment. Negative surplus means a loss relative to starting capital after deducting all recorded unpaid obligations.</p><p><a href="result.json">Full assumptions and results (JSON)</a> · <a href="monthly.csv">Monthly ledger (CSV)</a></p><p><a href="trace.html">Explain one month step by step</a></p><h2>Monthly ledger</h2><p>Month 0 is the first policy month. Money is displayed in INR; machine-readable amounts are integer paise. Orange rows mark a capital breach or payment shortfall.</p><div class="scroll"><table><thead><tr><th>Month</th><th>Issued</th><th>Active opening</th><th>Deaths</th><th>Lapses</th><th>Expired</th><th>Premiums</th><th>Claims incurred</th><th>Claims paid</th><th>Closing cash</th><th>Reserve</th><th>Capital margin</th></tr></thead><tbody><tr class="bad"><td>0</td><td>1</td><td>1</td><td>1</td><td>0</td><td>0</td><td>INR 1,000.00</td><td>INR 100,000.00</td><td>INR 420.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>1</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>2</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>3</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>4</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>5</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>6</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>7</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>8</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>9</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>10</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr><tr class="bad"><td>11</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR 0.00</td><td>INR -99,580.00</td></tr></tbody></table></div><h2>What this build assumes</h2><ul><li>A Yule birth creates a candidate; active customers can die, lapse or expire.</li><li>Active customers pay at the start of a month. Lapse occurs after covered deaths.</li><li>Expenses are settled before cash interest; claims are settled at month-end.</li><li>Unpaid expenses and claims remain liabilities; negative cash is never used to fake a payment.</li><li>New issues stop after the first unpaid obligation; existing policies are projected to run-off.</li><li>Reserve floors and the capital buffer are project rules, not statutory measures.</li><li>Experience shocks affect realized outcomes. Reserves retain the original pricing basis; they are not a stress-revalued solvency measure.</li><li>Grace periods, real mortality calibration, AI Audit and CAPSAFE are future work.</li></ul><h2>Pricing calculation</h2><pre>{
+  &quot;premium_factor&quot;: 1.0,
+  &quot;benefit_factor&quot;: 1.0,
+  &quot;expected_premiums_paise&quot;: 100000.0,
+  &quot;expected_expenses_paise&quot;: 58000.0,
+  &quot;candidate_benefit_paise&quot;: 42000,
+  &quot;selected_benefit_paise&quot;: 10000000,
+  &quot;expected_benefits_paise&quot;: 10000000.0,
+  &quot;expected_margin_paise&quot;: -9958000.0,
+  &quot;target_margin_paise&quot;: 0,
+  &quot;meets_target_margin&quot;: false,
+  &quot;selection&quot;: &quot;fixed_by_configuration&quot;,
+  &quot;selected_premium_paise&quot;: 100000,
+  &quot;required_premium_paise&quot;: 10058000,
+  &quot;mode&quot;: &quot;assess&quot;
+}</pre>
+<footer>Life Insurance Lab v0.2 · synthetic assumptions · virtual money · Python standard library</footer>
+</body></html>

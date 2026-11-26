@@ -1,0 +1,18 @@
+{
+  "config": {},
+  "scenarios": [
+    {
+      "name": "baseline"
+    },
+    {
+      "name": "higher mortality",
+      "mortality_multiplier": 2
+    }
+  ],
+  "capitals": [
+    1000000,
+    5000000
+  ],
+  "paths": 100,
+  "persist": true
+}

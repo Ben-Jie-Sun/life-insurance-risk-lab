@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Insurance Lab — monthly calculation trace</title><style>
+:root{font-family:system-ui,sans-serif;color:#1c2d3b;background:#f0f4f5}
+body{max-width:1200px;margin:40px auto;padding:0 24px;line-height:1.55}
+h1{font-size:2rem;line-height:1.2} h2{font-size:1.3rem;margin-top:32px}
+.eyebrow{color:#426671;font-weight:650;letter-spacing:.06em;font-size:.8rem}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:12px}
+.card{background:white;padding:18px;border:1px solid #d5dfe2;border-radius:10px}
+.value{display:block;font-size:1.35rem;font-weight:700;margin-top:8px}
+.note{border-left:4px solid #19857b;background:#e0efec;padding:12px 18px}
+.warning{border-left:4px solid #b06523;background:#fff0dc;padding:12px 18px}
+.scroll{overflow:auto;background:white;border:1px solid #d5dfe2;border-radius:10px}
+table{border-collapse:collapse;width:100%;font-size:.85rem;white-space:nowrap}
+th,td{padding:10px 12px;border-bottom:1px solid #e4eaec;text-align:right}
+th{background:#173f4c;color:white}td:first-child,th:first-child{text-align:left}
+tbody tr:hover{background:#eff7f5}.bad{background:#fff0dc}
+pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#fff;padding:16px;border-radius:8px}
+a{color:#146f77}footer{color:#5a6c74;font-size:.85rem;margin:32px 0}
+</style></head><body><h1>Explain month 8</h1><p>Scenario: mortality_shock.</p><p class="note">All arithmetic checks pass: True.</p><div class="scroll"><table><thead><tr><th>Calculation</th><th>Amount</th></tr></thead><tbody><tr><td>premiums = active_open × premium</td><td>INR 137,000.00</td></tr><tr><td>expenses incurred = maintenance + acquisition</td><td>INR 13,960.00</td></tr><tr><td>expenses paid = min(cash after premiums, old + new expenses)</td><td>INR 13,960.00</td></tr><tr><td>interest = round_to_paisa(remaining cash × realized return)</td><td>INR 18,103.93</td></tr><tr><td>new claims = deaths × fixed benefit</td><td>INR 1,780,567.66</td></tr><tr><td>claims paid = min(available cash, old + new claims)</td><td>INR 1,780,567.66</td></tr><tr><td>closing cash = interest base + interest - claims paid</td><td>INR 4,272,178.40</td></tr><tr><td>net assets = cash - unpaid claims - unpaid expenses</td><td>INR 4,272,178.40</td></tr><tr><td>capital margin = net assets - reference reserve - buffer</td><td>INR 3,772,178.40</td></tr></tbody></table></div><p>Money is displayed in INR; JSON operands are in paise.</p><p><a href="trace.json">Exact inputs and individual checks</a></p><h2>Recorded month</h2><pre>{
+  &quot;month&quot;: 8,
+  &quot;candidates&quot;: 6,
+  &quot;issued&quot;: 6,
+  &quot;not_issued&quot;: 0,
+  &quot;cumulative_candidates&quot;: 143,
+  &quot;cumulative_issued&quot;: 143,
+  &quot;active_open&quot;: 137,
+  &quot;deaths&quot;: 2,
+  &quot;lapses&quot;: 2,
+  &quot;expired&quot;: 0,
+  &quot;active_close&quot;: 133,
+  &quot;opening_cash_paise&quot;: 591160213,
+  &quot;premiums_paise&quot;: 13700000,
+  &quot;expenses_incurred_paise&quot;: 1396000,
+  &quot;expenses_paid_paise&quot;: 1396000,
+  &quot;interest_paise&quot;: 1810393,
+  &quot;claims_incurred_paise&quot;: 178056766,
+  &quot;claims_paid_paise&quot;: 178056766,
+  &quot;unpaid_claims_paise&quot;: 0,
+  &quot;unpaid_expenses_paise&quot;: 0,
+  &quot;opening_unpaid_claims_paise&quot;: 0,
+  &quot;opening_unpaid_expenses_paise&quot;: 0,
+  &quot;closing_cash_paise&quot;: 427217840,
+  &quot;net_assets_paise&quot;: 427217840,
+  &quot;reserve_requirement_paise&quot;: 0,
+  &quot;capital_margin_paise&quot;: 377217840,
+  &quot;payment_shortfall&quot;: false,
+  &quot;capital_breach&quot;: false,
+  &quot;mortality_multiplier&quot;: 3.0,
+  &quot;mortality_probability_min&quot;: 0.0029970009999999996,
+  &quot;mortality_probability_max&quot;: 0.0029970009999999996,
+  &quot;lapse_probability_min&quot;: 0.005,
+  &quot;lapse_probability_max&quot;: 0.005,
+  &quot;asset_return_monthly&quot;: 0.003,
+  &quot;expected_asset_return_monthly&quot;: 0.003,
+  &quot;return_volatility_monthly&quot;: 0.0,
+  &quot;scenario_events&quot;: &quot;temporary mortality shock&quot;
+}</pre>
+<footer>Life Insurance Lab v0.2 · synthetic assumptions · virtual money · Python standard library</footer>
+</body></html>

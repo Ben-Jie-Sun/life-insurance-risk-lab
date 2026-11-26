@@ -1,0 +1,2 @@
+# Python 3.10 or later. The runnable core has no third-party dependencies.
+# You do not need to pip install anything to run from this project directory.

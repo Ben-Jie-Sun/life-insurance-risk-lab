@@ -1,0 +1,10 @@
+{
+  "name": "My first model",
+  "kind": "model",
+  "document": {
+    "policy": {
+      "monthly_premium": 1000,
+      "term_months": 36
+    }
+  }
+}

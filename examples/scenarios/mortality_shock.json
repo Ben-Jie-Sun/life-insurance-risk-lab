@@ -1,0 +1,11 @@
+{
+  "name": "mortality_shock",
+  "events": [
+    {
+      "name": "temporary mortality shock",
+      "start_month": 8,
+      "end_month": 11,
+      "mortality_multiplier": 3
+    }
+  ]
+}

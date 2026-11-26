@@ -1,0 +1,8 @@
+{
+  "config": {
+    "policy": {
+      "pricing_mode": "benefit_to_premium",
+      "sum_assured": 1000000
+    }
+  }
+}

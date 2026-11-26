@@ -1,0 +1,11 @@
+{
+  "name": "lapse_shock",
+  "events": [
+    {
+      "name": "temporary lapse shock",
+      "start_month": 8,
+      "end_month": 11,
+      "lapse_monthly": 0.05
+    }
+  ]
+}

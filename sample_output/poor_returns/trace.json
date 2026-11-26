@@ -1,0 +1,112 @@
+{
+  "month": 8,
+  "units": "paise",
+  "contract": {
+    "name": "Synthetic term-life example",
+    "premium_paise": 100000,
+    "benefit_paise": 89028383,
+    "term_months": 36
+  },
+  "scenario": "poor_returns",
+  "row": {
+    "month": 8,
+    "candidates": 6,
+    "issued": 6,
+    "not_issued": 0,
+    "cumulative_candidates": 143,
+    "cumulative_issued": 143,
+    "active_open": 137,
+    "deaths": 1,
+    "lapses": 2,
+    "expired": 0,
+    "active_close": 134,
+    "opening_cash_paise": 591160213,
+    "premiums_paise": 13700000,
+    "expenses_incurred_paise": 1396000,
+    "expenses_paid_paise": 1396000,
+    "interest_paise": -12069284,
+    "claims_incurred_paise": 89028383,
+    "claims_paid_paise": 89028383,
+    "unpaid_claims_paise": 0,
+    "unpaid_expenses_paise": 0,
+    "opening_unpaid_claims_paise": 0,
+    "opening_unpaid_expenses_paise": 0,
+    "closing_cash_paise": 502366546,
+    "net_assets_paise": 502366546,
+    "reserve_requirement_paise": 0,
+    "capital_margin_paise": 452366546,
+    "payment_shortfall": false,
+    "capital_breach": false,
+    "mortality_multiplier": 1.0,
+    "mortality_probability_min": 0.001,
+    "mortality_probability_max": 0.001,
+    "lapse_probability_min": 0.005,
+    "lapse_probability_max": 0.005,
+    "asset_return_monthly": -0.02,
+    "expected_asset_return_monthly": -0.02,
+    "return_volatility_monthly": 0.0,
+    "scenario_events": "poor return period"
+  },
+  "steps": [
+    {
+      "operation": "premiums = active_open \u00d7 premium",
+      "active_open": 137,
+      "premium_paise": 100000,
+      "result_paise": 13700000
+    },
+    {
+      "operation": "expenses incurred = maintenance + acquisition",
+      "maintenance_paise": 1096000,
+      "acquisition_paise": 300000,
+      "result_paise": 1396000
+    },
+    {
+      "operation": "expenses paid = min(cash after premiums, old + new expenses)",
+      "due_paise": 1396000,
+      "result_paise": 1396000
+    },
+    {
+      "operation": "interest = round_to_paisa(remaining cash \u00d7 realized return)",
+      "base_paise": 603464213,
+      "rate": -0.02,
+      "result_paise": -12069284
+    },
+    {
+      "operation": "new claims = deaths \u00d7 fixed benefit",
+      "deaths": 1,
+      "benefit_paise": 89028383,
+      "result_paise": 89028383
+    },
+    {
+      "operation": "claims paid = min(available cash, old + new claims)",
+      "due_paise": 89028383,
+      "result_paise": 89028383
+    },
+    {
+      "operation": "closing cash = interest base + interest - claims paid",
+      "result_paise": 502366546
+    },
+    {
+      "operation": "net assets = cash - unpaid claims - unpaid expenses",
+      "result_paise": 502366546
+    },
+    {
+      "operation": "capital margin = net assets - reference reserve - buffer",
+      "result_paise": 452366546
+    }
+  ],
+  "checks": {
+    "premiums_match": true,
+    "expenses_match": true,
+    "interest_matches": true,
+    "claims_match": true,
+    "cash_matches": true,
+    "net_assets_match": true,
+    "capital_margin_matches": true,
+    "claim_arrears_match": true,
+    "expense_arrears_match": true,
+    "policies_conserved": true
+  },
+  "all_checks_pass": true,
+  "note": "Probability ranges in the row span active cohorts at different policy durations. Cash amounts are exact integer paise."
+}

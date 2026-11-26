@@ -1,0 +1,4 @@
+# Optional: only for rebuilding paper figures and PDF, not for running the app.
+matplotlib>=3.10
+reportlab>=4
+Pillow>=9

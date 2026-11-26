@@ -1,0 +1,24 @@
+{
+  "policy": {
+    "name": "Synthetic term-life example",
+    "term_months": 36,
+    "monthly_premium": 1000,
+    "monthly_expense": 80,
+    "acquisition_expense": 500,
+    "mortality_monthly": 0.001,
+    "lapse_monthly": 0.005,
+    "valuation_interest_monthly": 0.003,
+    "target_epv_margin": 500,
+    "sum_assured": null
+  },
+  "simulation": {
+    "initial_policies": 100,
+    "acquisition_months": 12,
+    "yule_rate_monthly": 0.03,
+    "starting_capital": 5000000,
+    "asset_interest_monthly": 0.003,
+    "capital_buffer": 500000,
+    "max_policies": 10000,
+    "seed": 2026
+  }
+}

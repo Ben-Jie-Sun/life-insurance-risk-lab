@@ -1,0 +1,13 @@
+month,candidates,issued,not_issued,cumulative_candidates,cumulative_issued,active_open,deaths,lapses,expired,active_close,opening_cash_paise,premiums_paise,expenses_incurred_paise,expenses_paid_paise,interest_paise,claims_incurred_paise,claims_paid_paise,unpaid_claims_paise,unpaid_expenses_paise,opening_unpaid_claims_paise,opening_unpaid_expenses_paise,closing_cash_paise,net_assets_paise,reserve_requirement_paise,capital_margin_paise,payment_shortfall,capital_breach,mortality_multiplier,mortality_probability_min,mortality_probability_max,lapse_probability_min,lapse_probability_max,asset_return_monthly,expected_asset_return_monthly,return_volatility_monthly,scenario_events
+0,1,1,0,1,1,1,1,0,0,0,0,100000,58000,58000,0,10000000,42000,9958000,0,0,0,0,-9958000,0,-9958000,True,True,1.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,
+1,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+2,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+3,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+4,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+5,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+6,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+7,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+8,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+9,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+10,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,
+11,0,0,0,1,1,0,0,0,0,0,0,0,0,0,0,0,0,9958000,0,9958000,0,0,-9958000,0,-9958000,True,True,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,

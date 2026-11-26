@@ -1,0 +1,434 @@
+{
+  "baseline": {
+    "summary": {
+      "payment_shortfall": {
+        "events": 11,
+        "paths": 1000,
+        "estimate": 0.011,
+        "wilson_95": [
+          0.006153174098086638,
+          0.019589395700786275
+        ],
+        "zero_events_one_sided_95_upper": null
+      },
+      "capital_breach": {
+        "events": 21,
+        "paths": 1000,
+        "estimate": 0.021,
+        "wilson_95": [
+          0.013775739567924286,
+          0.03189029506123752
+        ],
+        "zero_events_one_sided_95_upper": null
+      },
+      "economic_surplus_paise": {
+        "mean": 101049344.587,
+        "sample_sd": 202714611.2470626,
+        "standard_error": 6410398.865363037,
+        "mean_normal_approx_95": [
+          88485193.68435201,
+          113613495.48964798
+        ],
+        "p05": -254025903.9,
+        "median": 119040763.5,
+        "p95": 415320772.79999954,
+        "min": -701180822,
+        "max": 556202113
+      },
+      "candidates_generated": {
+        "mean": 143.733,
+        "sample_sd": 7.8291127215033764,
+        "standard_error": 0.2475782825815019,
+        "mean_normal_approx_95": [
+          143.24775548278598,
+          144.21824451721403
+        ],
+        "p05": 131.0,
+        "median": 143.0,
+        "p95": 157.04999999999995,
+        "min": 120,
+        "max": 173
+      },
+      "policies_issued": {
+        "mean": 143.733,
+        "sample_sd": 7.8291127215033764,
+        "standard_error": 0.2475782825815019,
+        "mean_normal_approx_95": [
+          143.24775548278598,
+          144.21824451721403
+        ],
+        "p05": 131.0,
+        "median": 143.0,
+        "p95": 157.04999999999995,
+        "min": 120,
+        "max": 173
+      },
+      "deaths": {
+        "mean": 4.504,
+        "sample_sd": 2.0775707690233562,
+        "standard_error": 0.065698556303014,
+        "mean_normal_approx_95": [
+          4.375233195809815,
+          4.632766804190184
+        ],
+        "p05": 1.0,
+        "median": 4.0,
+        "p95": 8.0,
+        "min": 0,
+        "max": 13
+      }
+    },
+    "yule_benchmark": {
+      "exact_mean": 143.332941456034,
+      "exact_variance": 62.11037960835474,
+      "simulated_mean": 143.733,
+      "simulated_variance": 61.295006006006005,
+      "exact_standard_error_of_sample_mean": 0.24921954098415866,
+      "mean_error_in_exact_standard_errors": 1.6052454891224859
+    },
+    "pricing": {
+      "premium_factor": 30.884189715264153,
+      "benefit_factor": 0.030791814272446816,
+      "expected_premiums_paise": 3088418.971526415,
+      "expected_expenses_paise": 297073.5177221131,
+      "candidate_benefit_paise": 89028383,
+      "selected_benefit_paise": 89028383,
+      "expected_benefits_paise": 2741345.4343122616,
+      "expected_margin_paise": 50000.01949204039,
+      "target_margin_paise": 50000,
+      "meets_target_margin": true,
+      "selection": "calculated_from_monthly_premium",
+      "selected_premium_paise": 100000,
+      "required_premium_paise": 100000,
+      "mode": "premium_to_benefit"
+    },
+    "paths": 1000,
+    "seed_start": 2026,
+    "seed_end": 3025,
+    "seconds": 1.879208435999999
+  },
+  "low_capital": {
+    "summary": {
+      "payment_shortfall": {
+        "events": 469,
+        "paths": 1000,
+        "estimate": 0.469,
+        "wilson_95": [
+          0.438247507417386,
+          0.49998975160871834
+        ],
+        "zero_events_one_sided_95_upper": null
+      },
+      "capital_breach": {
+        "events": 649,
+        "paths": 1000,
+        "estimate": 0.649,
+        "wilson_95": [
+          0.6188992039590456,
+          0.6779604220122589
+        ],
+        "zero_events_one_sided_95_upper": null
+      },
+      "economic_surplus_paise": {
+        "mean": 40481608.234,
+        "sample_sd": 195657241.79957578,
+        "standard_error": 6187225.247929613,
+        "mean_normal_approx_95": [
+          28354869.58382105,
+          52608346.884178944
+        ],
+        "p05": -296643415.1,
+        "median": 56137031.0,
+        "p95": 353466704.64999956,
+        "min": -603736539,
+        "max": 494348041
+      },
+      "candidates_generated": {
+        "mean": 143.733,
+        "sample_sd": 7.8291127215033764,
+        "standard_error": 0.2475782825815019,
+        "mean_normal_approx_95": [
+          143.24775548278598,
+          144.21824451721403
+        ],
+        "p05": 131.0,
+        "median": 143.0,
+        "p95": 157.04999999999995,
+        "min": 120,
+        "max": 173
+      },
+      "policies_issued": {
+        "mean": 137.757,
+        "sample_sd": 13.766170798681035,
+        "standard_error": 0.43532454382731334,
+        "mean_normal_approx_95": [
+          136.90377957251215,
+          138.61022042748786
+        ],
+        "p05": 109.95,
+        "median": 141.0,
+        "p95": 155.0,
+        "min": 100,
+        "max": 173
+      },
+      "deaths": {
+        "mean": 4.322,
+        "sample_sd": 1.9287394940831268,
+        "standard_error": 0.06099209814423534,
+        "mean_normal_approx_95": [
+          4.202457684295767,
+          4.4415423157042335
+        ],
+        "p05": 1.0,
+        "median": 4.0,
+        "p95": 8.0,
+        "min": 0,
+        "max": 11
+      }
+    },
+    "yule_benchmark": {
+      "exact_mean": 143.332941456034,
+      "exact_variance": 62.11037960835474,
+      "simulated_mean": 143.733,
+      "simulated_variance": 61.295006006006005,
+      "exact_standard_error_of_sample_mean": 0.24921954098415866,
+      "mean_error_in_exact_standard_errors": 1.6052454891224859
+    },
+    "pricing": {
+      "premium_factor": 30.884189715264153,
+      "benefit_factor": 0.030791814272446816,
+      "expected_premiums_paise": 3088418.971526415,
+      "expected_expenses_paise": 297073.5177221131,
+      "candidate_benefit_paise": 89028383,
+      "selected_benefit_paise": 89028383,
+      "expected_benefits_paise": 2741345.4343122616,
+      "expected_margin_paise": 50000.01949204039,
+      "target_margin_paise": 50000,
+      "meets_target_margin": true,
+      "selection": "calculated_from_monthly_premium",
+      "selected_premium_paise": 100000,
+      "required_premium_paise": 100000,
+      "mode": "premium_to_benefit"
+    },
+    "paths": 1000,
+    "seed_start": 2026,
+    "seed_end": 3025,
+    "seconds": 1.7841233009999655
+  },
+  "mortality_shock": {
+    "summary": {
+      "payment_shortfall": {
+        "events": 27,
+        "paths": 1000,
+        "estimate": 0.027,
+        "wilson_95": [
+          0.018621382774294995,
+          0.03899873075304015
+        ],
+        "zero_events_one_sided_95_upper": null
+      },
+      "capital_breach": {
+        "events": 41,
+        "paths": 1000,
+        "estimate": 0.041,
+        "wilson_95": [
+          0.030364971082098315,
+          0.0551479932076413
+        ],
+        "zero_events_one_sided_95_upper": null
+      },
+      "economic_surplus_paise": {
+        "mean": 28976254.337,
+        "sample_sd": 217143834.4777295,
+        "standard_error": 6866690.968122243,
+        "mean_normal_approx_95": [
+          15517787.346513929,
+          42434721.327486075
+        ],
+        "p05": -345345858.65,
+        "median": 43499918.5,
+        "p95": 359870036.55,
+        "min": -750854549,
+        "max": 556202113
+      },
+      "candidates_generated": {
+        "mean": 143.733,
+        "sample_sd": 7.8291127215033764,
+        "standard_error": 0.2475782825815019,
+        "mean_normal_approx_95": [
+          143.24775548278598,
+          144.21824451721403
+        ],
+        "p05": 131.0,
+        "median": 143.0,
+        "p95": 157.04999999999995,
+        "min": 120,
+        "max": 173
+      },
+      "policies_issued": {
+        "mean": 143.672,
+        "sample_sd": 7.848185141165441,
+        "standard_error": 0.24818140544772893,
+        "mean_normal_approx_95": [
+          143.18557338368993,
+          144.15842661631007
+        ],
+        "p05": 131.0,
+        "median": 143.0,
+        "p95": 157.0,
+        "min": 120,
+        "max": 173
+      },
+      "deaths": {
+        "mean": 5.207,
+        "sample_sd": 2.2115700400489335,
+        "standard_error": 0.0699359853154443,
+        "mean_normal_approx_95": [
+          5.069927987558407,
+          5.344072012441592
+        ],
+        "p05": 2.0,
+        "median": 5.0,
+        "p95": 9.0,
+        "min": 0,
+        "max": 14
+      }
+    },
+    "yule_benchmark": {
+      "exact_mean": 143.332941456034,
+      "exact_variance": 62.11037960835474,
+      "simulated_mean": 143.733,
+      "simulated_variance": 61.295006006006005,
+      "exact_standard_error_of_sample_mean": 0.24921954098415866,
+      "mean_error_in_exact_standard_errors": 1.6052454891224859
+    },
+    "pricing": {
+      "premium_factor": 30.884189715264153,
+      "benefit_factor": 0.030791814272446816,
+      "expected_premiums_paise": 3088418.971526415,
+      "expected_expenses_paise": 297073.5177221131,
+      "candidate_benefit_paise": 89028383,
+      "selected_benefit_paise": 89028383,
+      "expected_benefits_paise": 2741345.4343122616,
+      "expected_margin_paise": 50000.01949204039,
+      "target_margin_paise": 50000,
+      "meets_target_margin": true,
+      "selection": "calculated_from_monthly_premium",
+      "selected_premium_paise": 100000,
+      "required_premium_paise": 100000,
+      "mode": "premium_to_benefit"
+    },
+    "paths": 1000,
+    "seed_start": 2026,
+    "seed_end": 3025,
+    "seconds": 1.8904996180000353
+  },
+  "combined_stress": {
+    "summary": {
+      "payment_shortfall": {
+        "events": 33,
+        "paths": 1000,
+        "estimate": 0.033,
+        "wilson_95": [
+          0.023592927958426907,
+          0.04598126446708159
+        ],
+        "zero_events_one_sided_95_upper": null
+      },
+      "capital_breach": {
+        "events": 48,
+        "paths": 1000,
+        "estimate": 0.048,
+        "wilson_95": [
+          0.036393301020807914,
+          0.06306608865013393
+        ],
+        "zero_events_one_sided_95_upper": null
+      },
+      "economic_surplus_paise": {
+        "mean": -8820208.154,
+        "sample_sd": 212736481.71494582,
+        "standard_error": 6727318.236299921,
+        "mean_normal_approx_95": [
+          -22005509.60968736,
+          4365093.301687362
+        ],
+        "p05": -375062964.45,
+        "median": 7485554.0,
+        "p95": 317557043.4,
+        "min": -769547023,
+        "max": 509723907
+      },
+      "candidates_generated": {
+        "mean": 143.733,
+        "sample_sd": 7.8291127215033764,
+        "standard_error": 0.2475782825815019,
+        "mean_normal_approx_95": [
+          143.24775548278598,
+          144.21824451721403
+        ],
+        "p05": 131.0,
+        "median": 143.0,
+        "p95": 157.04999999999995,
+        "min": 120,
+        "max": 173
+      },
+      "policies_issued": {
+        "mean": 143.647,
+        "sample_sd": 7.812901665350232,
+        "standard_error": 0.24706564397429367,
+        "mean_normal_approx_95": [
+          143.16276023599318,
+          144.1312397640068
+        ],
+        "p05": 131.0,
+        "median": 143.0,
+        "p95": 157.0,
+        "min": 120,
+        "max": 173
+      },
+      "deaths": {
+        "mean": 5.204,
+        "sample_sd": 2.201642848245653,
+        "standard_error": 0.0696220599467671,
+        "mean_normal_approx_95": [
+          5.0675432699748475,
+          5.340456730025152
+        ],
+        "p05": 2.0,
+        "median": 5.0,
+        "p95": 9.0,
+        "min": 0,
+        "max": 13
+      }
+    },
+    "yule_benchmark": {
+      "exact_mean": 143.332941456034,
+      "exact_variance": 62.11037960835474,
+      "simulated_mean": 143.733,
+      "simulated_variance": 61.295006006006005,
+      "exact_standard_error_of_sample_mean": 0.24921954098415866,
+      "mean_error_in_exact_standard_errors": 1.6052454891224859
+    },
+    "pricing": {
+      "premium_factor": 30.884189715264153,
+      "benefit_factor": 0.030791814272446816,
+      "expected_premiums_paise": 3088418.971526415,
+      "expected_expenses_paise": 297073.5177221131,
+      "candidate_benefit_paise": 89028383,
+      "selected_benefit_paise": 89028383,
+      "expected_benefits_paise": 2741345.4343122616,
+      "expected_margin_paise": 50000.01949204039,
+      "target_margin_paise": 50000,
+      "meets_target_margin": true,
+      "selection": "calculated_from_monthly_premium",
+      "selected_premium_paise": 100000,
+      "required_premium_paise": 100000,
+      "mode": "premium_to_benefit"
+    },
+    "paths": 1000,
+    "seed_start": 2026,
+    "seed_end": 3025,
+    "seconds": 1.8321186050000051
+  }
+}

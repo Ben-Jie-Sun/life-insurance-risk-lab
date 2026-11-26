@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yule-life-insurance-lab"
+version = "0.3.0"
+description = "Yule-Furry acquisition and Monte Carlo insurance risk laboratory"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+insurance-lab = "life_insurance_lab.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["life_insurance_lab*"]
+
+[tool.setuptools.package-data]
+life_insurance_lab = ["web/*.html", "web/*.css", "web/*.js"]
